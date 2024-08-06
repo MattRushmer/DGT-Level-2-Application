@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PageSwitch : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Page1()
     {
-        
+        SceneManager.LoadScene("Page 1");
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Page2()
     {
-        
+        SceneManager.LoadScene("Page 2");
+    }
+    public void Page3()
+    {
+        SceneManager.LoadScene("Page 3");
+    }
+    public void SettingsPage()
+    {
+        SceneManager.LoadScene("Settings Page");
     }
 }
