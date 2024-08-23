@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DateGetter : MonoBehaviour
 {
-    public TextMeshPro currentDate;
-    public TextMeshPro currentTime;
+    public Text currentDate;
+    public Text currentTime;
 
     void Start()
     {
