@@ -17,7 +17,7 @@ public class DateGetter : MonoBehaviour
 
     private void Update()
     {
-        string time = System.DateTime.UtcNow.ToLocalTime().ToString("HH:mm:ss");
+        string time = System.DateTime.UtcNow.ToLocalTime().ToString(" hh:mm:ss tt");
         currentTime.text = "Current Time:" + time;
     }
 
