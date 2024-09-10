@@ -737,9 +737,7 @@ namespace UI.Dates
 
             UpdateDisplay();
 
-            // I would have preferred to have this react automatically to changes,
-            // but that would mean setting up an observable list, which is an added
-            // complication we don't need right now
+           
             UpdateInputFieldText();
         }
 
