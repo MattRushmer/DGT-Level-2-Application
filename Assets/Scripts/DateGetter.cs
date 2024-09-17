@@ -63,14 +63,12 @@ public class DateGetter : MonoBehaviour
         TimeSpan ts = TimeSpan.Parse($"{hours}:{minutesInput.text}:{secondsInput.text}");
         alarmtime += ts;
 
-        if(DateTime.Now >= alarmtime)
+        if (DateTime.Now >= alarmtime)
         {
             alarmtime = alarmtime.AddDays(1);
         }
 
         isAlarmSet = true;
-
-        
     }
 
 

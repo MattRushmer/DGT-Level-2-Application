@@ -2,19 +2,20 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class NoteSave : MonoBehaviour
 {
     public TMP_InputField inputField;
-    public string ourText;
+    string ourText;
     // Start is called before the first frame update
     // this loads the contents of my notes on open
-    void Start()
+    private void Start()
     {
-        ourText = PlayerPrefs.GetString("NoteContents");
-        inputField.text = ourText;
+        TMP_InputField inputField1 = inputField;
+        inputField1.text = PlayerPrefs.GetString("NoteContents");
     }
 
     

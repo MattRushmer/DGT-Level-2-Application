@@ -42,7 +42,7 @@ public class AndroidNotificationControl : MonoBehaviour
         var notification = new AndroidNotification();
         notification.Title = title;
         notification.Text = text;
-        notification.FireTime = System.DateTime.Now.AddSeconds(fireTime);
+        notification.FireTime = System.DateTime.Now.AddHours(fireTime);
         notification.SmallIcon = "Logo";
         notification.LargeIcon = "Logo";
 
