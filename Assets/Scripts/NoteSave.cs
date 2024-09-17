@@ -19,7 +19,7 @@ public class NoteSave : MonoBehaviour
 
     
     //this is my fuction which saves my notes
-    void Update()
+    public void Save()
     {
         ourText = inputField.text;
         PlayerPrefs.SetString("NoteContents", ourText);
