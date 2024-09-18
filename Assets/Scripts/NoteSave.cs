@@ -14,8 +14,7 @@ public class NoteSave : MonoBehaviour
     // this loads the contents of my notes on open
     private void Start()
     {
-        TMP_InputField inputField1 = inputField;
-        inputField1.text = PlayerPrefs.GetString("NoteContents");
+        inputField.text = PlayerPrefs.GetString("NoteContents");
     }
 
     
