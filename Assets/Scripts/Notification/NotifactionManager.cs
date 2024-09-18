@@ -19,17 +19,20 @@ public class NotifactionManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        //this calls the two fuctions from my AndroidNotifications script
         #if UNITY_ANDROID
         androidNotifications.RequestAuthorization();
         androidNotifications.RegisterNotificationChannel();
         #endif
 
+        //this calls the fuction from my IOSNotifications script
         #if UNITY_IOS
         StartCoroutine(iosNotifications.RequestAuthorization());
         #endif
     }
     private void OnApplicationFocus(bool focus)
     {
+        // this checks if the application is currently open and if it isnt it will send the notification
        if(focus == false)
         {
             #if UNITY_ANDROID

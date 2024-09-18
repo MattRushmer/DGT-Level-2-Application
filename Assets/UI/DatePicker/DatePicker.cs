@@ -322,7 +322,6 @@ namespace UI.Dates
         private void _UpdateDisplay()
         {
             // don't do anything if we aren't actually active in the hierarchy
-            // (basically, we're either inactive or a prefab)
             if (!this.gameObject.activeInHierarchy) return;
             if (!m_updateScheduled) return;
 

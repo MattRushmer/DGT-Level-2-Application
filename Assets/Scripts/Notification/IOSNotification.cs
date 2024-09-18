@@ -28,7 +28,7 @@ public class IOSNotificationControl : MonoBehaviour
             TimeInterval = new System.TimeSpan(fireTime, 0, 0),
             Repeats = false
         };
-
+        // this creates the notification
         var notification = new iOSNotification()
         {
             Identifier = "alarm_Time",

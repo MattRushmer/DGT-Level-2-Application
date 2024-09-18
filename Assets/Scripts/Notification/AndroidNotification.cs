@@ -39,6 +39,7 @@ public class AndroidNotificationControl : MonoBehaviour
 
     public void SendNotification(string title, string text, int fireTime)
     {
+        //this sets up what the notification will look like
         var notification = new AndroidNotification();
         notification.Title = title;
         notification.Text = text;
